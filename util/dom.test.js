@@ -41,4 +41,5 @@ it('should output the provided message in the error paragraph', () => {
   const errorParagraph = errorsEl.firstElementChild;
 
   expect(errorParagraph.textContent).toBe(testErrorMessage);
-})
+  expect(errorParagraph.classList.contains('error')).toBe(true);
+});
